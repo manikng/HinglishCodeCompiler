@@ -2,7 +2,7 @@
 
 **Hinglish** — a tiny experimental programming language that mixes Hindi + English keywords.  
 This repository demonstrates lexical analysis and interpretation (a compact compiler front-end) so you can *write* and *run* Hinglish code on your machine.
-
+- A simple interpreter written in Python.
 ---
 
 ## 🔥 Quick: Run a Hinglish program
@@ -119,9 +119,19 @@ Or directly:
 python hinglish.py program.hl
 ```
 
-## ⚙️ Implementation Notes
+## Implementation Notes
 
 - Expression evaluation uses Python's `eval()`
+## See How it works (DEMO)
+WRITE CODE IN FILENAME.hl like test.hl and run:
+```bash
+python run_interpreter.py FILENAME.hl
+or 
+run run_interpreter.py directly from vs code run button 
+- Make sure python is installed in your system
+- It uses python at backend to run the hinglish code
+```
+![alt text](image.png)
 ## ✨ Future Features
 
 - [ ] Strict type enforcement on assignment
