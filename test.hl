@@ -1,0 +1,14 @@
+no i = 1
+binduNo temp = 25.5
+sach isHot = sahi
+
+agar (isHot) {
+    likh "Bahar garmi hai!"
+} warna {
+    likh "Thand hai bhai..."
+}
+
+jabtk (i < 5) {
+    likh "i abhi hai: " + str(i)
+    i = i + 1
+}
