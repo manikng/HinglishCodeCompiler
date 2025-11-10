@@ -103,5 +103,9 @@ jabtk (count <= 7) {
 }
 
 // Finale
+binduno time_now  = 12.29
 likh "🎬 The End: " + boss + " kehte hain, 'Great work team Hash! Kal se diet tea.'"
-likh "🎯 Program samapt!"
+likh "🎯 Program end!"+ "time now : "
+
+likh time_now
+likh str(time_now) + " baje."
