@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 import sys
 from interpreter import HinglishInterpreter
 
@@ -20,3 +20,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# //#!/usr/bin/env python3

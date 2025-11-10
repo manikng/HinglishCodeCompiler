@@ -1,14 +1,107 @@
-no i = 1
-binduNo temp = 25.5
-sach isHot = sahi
+// Hinglish Comedy Program: "Chai, Code aur Confusion"
 
-agar (isHot) {
-    likh "Bahar garmi hai!"
-} warna {
-    likh "Thand hai bhai..."
+// Opening scene
+shabd intro = "👋 Namaste doston! #WE ARE TEAM HASH# Aaj hum coding karenge... par thoda alag andaaz mein!"
+likh intro
+
+// Characters
+shabd hero = "Raju"
+shabd sidekick = "Bunty"
+shabd boss = "Gupta Ji"
+
+// Props
+no chaiCups = 0
+no bugs = 0
+sach officeKhula = sahi
+
+likh "🎬 Scene 1: " + hero + " aur " + sidekick + " office pahunch gaye."
+likh "Boss " + boss + " kehte hain: 'Code likho, par pehle [translate:chai] lao!'"
+
+// For loop: chai rounds
+likh "☕ Chai collection shuru..."
+chal (no round = 1; round <= 5; round = round + 1) {
+    likh "👉 Round " + str(round) + ": " + sidekick + " bolta hai, 'Ek extra cup to " + boss + " ke liye!'"
+    chaiCups = chaiCups + 1
+
+    agar (round == 2) {
+        likh "😅 " + hero + ": 'Yaar chai me cheeni kam thi, aur ek!'"
+        chaiCups = chaiCups + 1
+        aage
+    }
+    agar (round == 3) {
+        likh "😂 " + sidekick + ": 'Boss ki chai mai makhi mar gayi! furiosa !!!!'"
+        chaiCups = chaiCups + 1
+    }
+
+    agar (round == 4) {
+        likh "🙈 " + sidekick + ": 'Chai gir gayi keyboard par!'"
+        bugs = bugs + 2
+    }
+
+    likh "   Ab tak total chai: " + str(chaiCups) + ", bugs: " + str(bugs)
 }
 
-jabtk (i < 5) {
-    likh "i abhi hai: " + str(i)
+likh "🎬 Scene 2: Coding time! (aur thodi si pareshaani)"
+no i = 0
+no energy = 3
+shabd repo = "Hash/UltraSecretRepo"
+likh hero + ": 'Chalo PR bana dete hain " + repo + " me.'"
+likh sidekick + ": 'Pehle bug fix kar le bhai!'"
+
+// While loop: debugging montage
+jabtk (officeKhula) {
     i = i + 1
+    likh "🔧 Debug try #" + str(i)
+
+    agar (bugs == 0) {
+        likh "✅ Kya baat! Zero bugs! Coffee treat!"
+        tod
+    }
+
+    agar (i % 2 == 1) {
+        likh "🧪 Test fail! " + boss + ": 'Aur likh assertion!'"
+        bugs = bugs - 1
+    } warna {
+        likh "🧪 Test pass! " + hero + ": 'Screenshot bhejO!'"
+        bugs = bugs - 2
+    }
+
+    agar (bugs <= 0) {
+        likh "🎉 All bugs fixed! Ship it!"
+        officeKhula = jhooth
+        tod
+    }
+
+    energy = energy - 1
+    agar (energy == 0) {
+        likh "🥱 Neend aa rahi... " + sidekick + ": 'Bhai ek aur [translate:chai]?'"
+        energy = 2
+        aage
+    }
+
+    agar (i >= 6) {
+        likh "🤯 Infinite loop ka darr! " + boss + ": 'Bas karo, kal karenge.'"
+        officeKhula = jhooth
+        tod
+    }
 }
+
+// Mini report
+likh "📊 Report: Chai cups = " + str(chaiCups) + ", Final bugs = " + str(bugs)
+
+// Bonus: Funny counting gag
+likh "🎭 Scene 3: Bunty ka maths"
+no count = 1
+jabtk (count <= 7) {
+    likh "   Bunty counts: " + str(count)
+    agar (count == 3) {
+        likh "   🤔 '3 ke baad 5 aata hai na?'"
+        count = count + 2
+        aage
+    }
+    count = count + 1
+}
+
+// Finale
+likh "🎬 The End: " + boss + " kehte hain, 'Great work team Hash! Kal se diet tea.'"
+likh "🎯 Program samapt!"
