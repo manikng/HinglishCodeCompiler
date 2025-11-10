@@ -132,6 +132,8 @@ run run_interpreter.py directly from vs code run button
 - It uses python at backend to run the hinglish code
 ```
 ![alt text](image.png)
+<img width="1024" height="724" alt="image" src="https://github.com/user-attachments/assets/3afd2d3b-7d4f-442f-9ed7-beaef40e8e00" />
+
 ## ✨ Future Features
 
 - [ ] Strict type enforcement on assignment
