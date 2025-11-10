@@ -132,7 +132,22 @@ run run_interpreter.py directly from vs code run button
 - It uses python at backend to run the hinglish code
 ```
 ![alt text](image.png)
+
 <img width="1024" height="724" alt="image" src="https://github.com/user-attachments/assets/3afd2d3b-7d4f-442f-9ed7-beaef40e8e00" />
+## Quick & Lightweight (recommended for now)
+
+Open a Hinglish file (test.hl) in VS Code.
+Click the bottom-right corner of VS Code where it says “Plain Text.”
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/6e0c91c6-2885-4d83-b8e2-93e9e2633ed5" />
+
+### Choose → Configure File Association for ‘.hl’… → Python
+or choose JavaScript (just to get basic colorization).
+<img width="1022" height="728" alt="image" src="https://github.com/user-attachments/assets/411202b6-8243-4603-a095-c75da2e2fa37" />
+### select any language to colorize the text
+<img width="608" height="325" alt="image" src="https://github.com/user-attachments/assets/b7471171-b6cf-4900-9197-393e3de054b2" />
+
+VS Code will now treat .hl like Python — instant colors!
+It’s not “true Hinglish syntax highlighting,” but it works well for testing.
 
 ## ✨ Future Features
 
